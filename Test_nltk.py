@@ -60,8 +60,13 @@ train_set = ["If we want to accelerate an object, then we must apply a force. Ap
              "energy above that needed to ionize the molecule is carried away as kinetic energy of the electron ejected",
              "the kinetic energy of an object is the energy that it possesses due to its motion. It is defined as the work needed to accelerate a body of a given mass from rest to its stated velocity"]
 #train_set = ['If', 'we', 'want', 'to', 'accelerate', 'an', 'object,', 'then', 'we', 'must', 'apply', 'a', 'force.', 'Applying', 'a', 'force', 'requires', 'us', 'to', 'do', 'work.', 'After', 'work', 'has', 'been', 'done,', 'energy', 'has', 'been', 'transferred', 'to', 'the', 'object,', 'and', 'the', 'object', 'will', 'be', 'moving', 'with', 'a', 'new', 'constant', 'speed.', 'The', 'energy', 'transferred', 'is', 'known', 'as', 'kinetic', 'energy,', 'and', 'it', 'depends', 'on', 'the', 'mass', 'and', 'speed', 'achieved']
+
+
 devtest_set = ["i am a good boy"]
 #devtest_set = ["Kinetic energy is the energy an object possesses due to its motion. An object of mass m moving at velocity v has a kinetic energy equal to mv"]
+
 #print cosine_sim('energy above that needed to ionize the molecule is carried away as kinetic energy of the electron ejected', 'kinetic is equal to half of product of mass and velocity square')
+
+
 print cosine_sim("If we want to accelerate an object then we must apply a force. Applying a force requires us to do work. After work has been done energy has been transferred to the object and the object will be moving with a new constant speed. The energy transferred is known as kinetic energy and it depends on the mass and speed achievedenergy above that needed to ionize the molecule is carried away as kinetic energy of the electron ejected the kinetic energy of an object is the energy that it possesses due to its motion. It is defined as the work needed to accelerate a body of a given mass from rest to its stated velocity"
 ,"kinetic enery is a type of energy it comes under physics")
