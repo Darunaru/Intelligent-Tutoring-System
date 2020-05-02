@@ -1,0 +1,47 @@
+<html>
+<title>AI Tutor</title>
+<head><link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='Styles/style.css') }}"/>
+</head>
+<body>
+<div class="container">
+<form action="http://localhost:5000/" method="post">
+ 
+<div class="headerx">
+</div><div class="header">
+<div id="form1" class="header">Email or Username<br>
+<input placeholder="Email" type="text" value="{{
+          request.form.username }}"><br>
+</div>
+<div id="form2" class="header">Password<br>
+<input placeholder="Password" type="password" value="{{
+          request.form.password }}">
+</div>
+</div>
+<input type="submit" class="submit1" value="Login">
+<div class="bodyx">
+<div id="intro2" class="bodyx">Create an account</div>
+<div id="form3" class="bodyx">
+<input placeholder="Firstname" type="text" id="namebox" name="name1">
+<input placeholder="Lastname" type="text" id="namebox"><br>
+ <input placeholder="Email" type="text" value="{{
+          request.form.username }}"><br>
+ <input placeholder="Password" type="password" value="{{
+          request.form.password }}"><br>
+ <input placeholder="Re-enter password" type="password" id="mailbox"><br>
+ </div>
+<img src="C:\Users\SONY\Desktop\Flask-Login-App-Tutorial-master\Flask-Login-App-Tutorial-master\Static\Styles\ai4.jpg" alt="AI" width="1500" height="720">
+ </div>
+<input type="submit" class="button2" value="Signup">
+<div class="body1">
+,</form>
+{% if error %}
+        
+<p class="error"><strong>Error:</strong> 
+{{ error }}
+      
+{% endif %}
+    
+</div>
+ 
+</body>
+</html>
