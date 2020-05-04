@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student's Site | Articles</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ url_for('static',filename='Styles/reset.css') }}" type="text/css" media="all">
+<link rel="stylesheet" href="{{ url_for('static',filename='Styles/style2.css') }}" type="text/css" media="all">
+</head>
+<style>
+body{
+background-image:url("{{url_for('static', filename='andorid_nexus_stock_4k.jpg')}}");
+}
+</style>
+<body id="page3">
+<!-- START PAGE SOURCE -->
+<div class="wrap">
+  <header>
+    <div class="container">
+      <h1><a href="#">Student's site</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="m1">Home Page</a></li>
+          <li><a href="about-us.html" class="m2">About Us</a></li>
+          <li class="current"><a href="articles.html" class="m3">Our Articles</a></li>
+          <li><a href="contact-us.html" class="m4">Contact Us</a></li>
+          <li class="last"><a href="sitemap.html" class="m5">Sitemap</a></li>
+        </ul>
+      </nav>
+      <form action="#" id="search-form">
+        <fieldset>
+          <div class="rowElem">
+            <input type="text">
+            <a href="#">Search</a></div>
+        </fieldset>
+      </form>
+    </div>
+  </header>
+  <div class="container">
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+        <li><span><a href="#">Physics</a></span></li>
+        <li><span><a href="#">Mathematics</a></span></li>
+        <li><span><a href="#">Biology</a></span></li>
+        <li><span><a href="#">Chemistry</a></span></li>
+        </ul>
+    </aside>
+    <section id="content">
+      <div id="banner">
+       <h2>Physics<span> <span></span></span></h2>
+      </div>
+      <div class="inside">
+        <h2>Articles</h2>
+        <ul class="articles">
+          <li><img src="{{url_for('static', filename='icon1.png')}}">
+            <h3><a href="{{url_for('article')}}">PHYSICS</a></h3>
+            Physics is one of the most fundamental scientific disciplines, and its main goal is to understand how the universe behaves. Physics is one of the oldest academic disciplines and, through its inclusion of astronomy, perhaps the oldest.</li>
+          <li><img src="{{url_for('static', filename='icon2.png')}}">
+            <h3><a href="{{url_for('cloud_article')}}">CLOUD COMPUTING</a></h3>
+          The practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer. This is an internet definition of Cloud computing.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
