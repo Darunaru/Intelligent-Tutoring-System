@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student's Site | Articles</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ url_for('static',filename='Styles/reset.css') }}" type="text/css" media="all">
+<link rel="stylesheet" href="{{ url_for('static',filename='Styles/style2.css') }}" type="text/css" media="all">
+</head>
+<style>
+body{
+background-image:url("{{url_for('static', filename='andorid_nexus_stock_4k_2.jpg')}}");
+}
+</style>
+<body id="page3">
+<!-- START PAGE SOURCE -->
+<div class="wrap">
+  <header>
+    <div class="container">
+      <h1><a href="#">Student's site</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="m1">Home Page</a></li>
+          <li><a href="about-us.html" class="m2">About Us</a></li>
+          <li class="current"><a href="articles.html" class="m3">Our Articles</a></li>
+          <li><a href="contact-us.html" class="m4">Contact Us</a></li>
+          <li class="last"><a href="sitemap.html" class="m5">Sitemap</a></li>
+        </ul>
+      </nav>
+      <form action="#" id="search-form">
+        <fieldset>
+          <div class="rowElem">
+            <input type="text">
+            <a href="#">Search</a></div>
+        </fieldset>
+      </form>
+    </div>
+  </header>
+  <div class="container">
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+        <li><span><h4><a href="#">Physics</a></h4></span></li>
+        <li><span><a href="#">Mathematics</a></span></li>
+        <li><span><a href="#">Biology</a></span></li>
+        <li><span><a href="#">Chemistry</a></span></li>
+    </ul>
+    </aside>
+    <section id="content">
+      <div id="banner">
+        <h2>Cloud <span>Computing <span></span></span></h2>
+      </div>
+      <div class="inside">
+        <h2>Articles</h2>
+        <ul class="articles">
+          <li><img src="{{url_for('static', filename='icon1.png')}}">
+            <h4><a href="{{url_for('questions')}}">Cloud basics</a></h4>
+            </li>
+          <li><img src="{{url_for('static', filename='icon2.png')}}">
+            <h4><a href="{{url_for('questions1')}}">Cloud overview</a></h4>
+            </li>
+          <li><img src="{{url_for('static', filename='icon3.png')}}">
+            <h4><a href="{{url_for('questions2')}}">Deployment cloud</a></h4>
+            </li>
+          <li><img src="{{url_for('static', filename='icon4.png')}}">
+            <h4><a href="{{url_for('questions3')}}">Service cloud</a></h4>
+            </li>
+          <li><img src="{{url_for('static', filename='icon5.png')}}">
+            <h4><a href="{{url_for('questions4')}}">Advanced cloud concepts</a></h4>
+       </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
