@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>
+acceleration</title>
+<style>
+body{
+background-image : url("{{url_for('static', filename='vinyl.jpg')}}");
+url("{{url_for('static', filename='dom2.jpg')}}");
+}
+</style>
+</head>
+<u><font color="white" size="6">Instantaneous Acceleration:</font></u><br/>
+<p><font color="white" size="6">Instantaneous acceleration is defines as the limit of average acceleration as the time interval approaches zero.</font></p>
+<p style="text-align:center;"><img src="{{url_for('static', filename='slide_31.jpg')}}" width="500" height="300" align="middle"></p>
+<div align="center"><iframe width="600" height="300" align="center" src="https://www.youtube.com/embed/Ed58JZKiGEM" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<form action = "http://localhost:5000/assessment" method = 'POST'>
+<input type="submit" value="Continue">
+</form>
+</body>
+</html>
