@@ -1,20 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-acceleration</title>
-<style>
-body{
-background-image : url("{{url_for('static', filename='vinyl.jpg')}}");
-url("{{url_for('static', filename='dom2.jpg')}}");
-}
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<u><font color="white" size="6">Instantaneous Acceleration:</font></u><br/>
-<p><font color="white" size="6">Instantaneous acceleration is defines as the limit of average acceleration as the time interval approaches zero.</font></p>
-<p style="text-align:center;"><img src="{{url_for('static', filename='slide_31.jpg')}}" width="500" height="300" align="middle"></p>
-<div align="center"><iframe width="600" height="300" align="center" src="https://www.youtube.com/embed/Ed58JZKiGEM" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-<form action = "http://localhost:5000/assessment" method = 'POST'>
-<input type="submit" value="Continue">
-</form>
+<body background="C:\Users\Dharun\Desktop\Flask examples\webpages\a22.png">
+
+<div class="jumbotron text-center">
+  <h2>CLOUD COMPUTING</h2>
+  <p>Cloud computing in very simple terms, is basically where a company uses someone elses computing services (usually over the internet) instead of having to run that software on their own computers.</p>
+</div>
+<video width="520" height="320" controls>
+  <source src="C:\Users\Dharun\Desktop\Flask examples\webpages\cloud weak\video1.mp4" type="video/mp4">
+</video>
+<img src=" C:\Users\Dharun\Desktop\Main\AI TUTOR\Staticbasicsimage.png" alt="" style="float:right;height:300px;">
+<font color="white" size="5">"<h2><strong>TYPES OF CLOUD</strong></h2>
+<ol>
+  <li>Deployment models</li>
+    <ul>
+        <li>Public cloud</li>
+        <li>Private cloud</li>
+        <li>Hybrid cloud</li>
+    </ul>
+  <li>Service models</li>
+    <ul>
+      <li>Infrastructure as a Service(IaaS)</li>
+      <li>Platform as a Service(PaaS)</li>
+      <li>SOftware as a Service(SaaS)</li>
+    </ul>
+  </ol>
+</font>
+<img src="C:\Users\Dharun\Desktop\Flask examples\webpages\cloud weak\pizzaimage.png" alt="" align="middle">
 </body>
 </html>
