@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CLOUD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CLOUD COMPUTING</h2>
+<p>Cloud computing in very simple terms, is basically where a company uses someone elses computing services (usually over the internet) instead of having to run that software on their own computers.</p>
+<p>The practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer</p>
+
+<header>
+  <h4>TYPES OF CLOUD COMPUTING</h4>
+</header>
+
+<section>
+  <nav>
+    <img src=" C:\Users\Dharun\Desktop\Main\AI TUTOR\Static\basicsimage.png" alt="" style="float:left;width:420px;height:220px;" >
+  </nav>
+
+  <article>
+    <h3>Infrastructure as a Service</h3>
+    <p>IaaS is the lowest level of cloud solution and refers to cloud-based computing infrastructure as a fully-outsourced service. </p>
+    <p>An IaaS provider will deliver pre-installed and configured hardware or software through a virtualized interface. </p>
+
+
+    <h3>Software as a Service</h3>
+    <p>PaaS providers provide fully functionally web-based applications on demand to customers.</p>
+    <p>The applications are mainly targeted at business users and can include web conferencing, ERP, CRM, email, time management, project tracking among others.</p>
+
+
+    <h3>Platform as a Service</h3>
+    <p>PaaS services are mostly used by companies that need to develop, test, collaborate and deploy cloud solutions for particular applications.</p>
+    <p>However, the hosting of the application is done by a third party</p>
+
+  </article>
+</section>
+
+</body>
+</html>
