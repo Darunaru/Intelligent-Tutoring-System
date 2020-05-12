@@ -92,3 +92,11 @@ def questions4():
    topic = "questions4"
    return render_template('questions4.html')
 
+@app.route('/ia/nltkk',methods = ['POST', 'GET'])
+def nltkk():
+   if topic == "ia":
+      if request.method == 'POST':
+         user_text1 = request.form.get('user_text1')
+         user_text2 = request.form.get('user_text2')
+         user_text2 = str(user_text2)
+         user_text1 = str(user_text1)
