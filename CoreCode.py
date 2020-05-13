@@ -100,3 +100,13 @@ def nltkk():
          user_text2 = request.form.get('user_text2')
          user_text2 = str(user_text2)
          user_text1 = str(user_text1)
+         
+         WORD = re.compile(r'\w+')
+
+         def get_cosine(vec1, vec2):
+              intersection = set(vec1.keys()) & set(vec2.keys())
+              numerator = sum([vec1[x] * vec2[x] for x in intersection])
+
+              sum1 = sum([vec1[x]**2 for x in vec1.keys()])
+              sum2 = sum([vec2[x]**2 for x in vec2.keys()])
+              denominator = math.sqrt(sum1) * math.sqrt(sum2)
