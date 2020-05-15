@@ -115,6 +115,15 @@ def nltkk():
                  return 0.0
               else:
                  return float(numerator) / denominator
+               
+         text1 = 'A derivative is a contract between two parties which derives its value/price from an underlying asset. The most common types of derivatives are futures, options, forwards and swaps.'
+         text2 = 'Average acceleration is the change in velocity divided by an elapsed time'
+
+         vector1 = text_to_vector(text1)
+         vector2 = text_to_vector(text2)
+
+         uservector1= text_to_vector(user_text1)
+         uservector2= text_to_vector(user_text2)
 
          def text_to_vector(text):
               words = WORD.findall(text)
