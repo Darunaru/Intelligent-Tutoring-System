@@ -128,3 +128,13 @@ def nltkk():
          def text_to_vector(text):
               words = WORD.findall(text)
               return Counter(words)
+ 
+         av1 = get_cosine(uservector1, vector1)
+         av2 = get_cosine(uservector2, vector2)
+         print('Cosine:', av1)
+         print('Cosine:', av2)
+
+         #######Evaluating accuracy########
+         if av1*100 > 40:
+            #print("bright")
+            ans1 = "bright"
