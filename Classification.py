@@ -13,3 +13,9 @@ attentive = tf.feature_column.categorical_column_with_vocabulary_list("ATTENTIVE
 embedded_attentive = tf.feature_column.embedding_column(attentive, dimension=2)
 nlp = tf.feature_column.numeric_column('NLP')
 session_time = tf.feature_column.numeric_column('SESSION_TIME')
+attendance = tf.feature_column.numeric_column('ATTENDANCE')
+past_education = tf.feature_column.numeric_column('PAST_EDUCATION')
+final = tf.feature_column.numeric_column('FINAL')
+
+#feat_cols = [nlp,embedded_attentive,session_time,attendance,past_education,final]
+feat_cols = [nlp,attentive,session_time,attendance,past_education,final]
